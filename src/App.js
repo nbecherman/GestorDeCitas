@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+// App.js
+import React, { useState } from 'react';
 import './App.css';
+import Titulo from './titulo'; 
+import CrearCita from './crearCita';
+import ListaCitas from './listaCitas';
 
 function App() {
+  const [citas, setCitas] = useState([]);
+
+  const agregarCita = (cita) => {
+    setCitas([...citas, cita]);
+  };
+
+  const eliminarCita = (index) => {
+    const nuevasCitas = citas.filter((_, i) => i !== index);
+    setCitas(nuevasCitas);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Titulo /> 
+      <CrearCita agregarCita={agregarCita} />
+      <ListaCitas citas={citas} eliminarCita={eliminarCita} />
     </div>
   );
 }

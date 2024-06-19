@@ -1,42 +1,44 @@
 .crear-cita {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    float: left;
-  width: 50%; /* Ajustar el ancho según sea necesario */
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos del formulario */
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 15px;
-  }
-  
-  textarea {
-    height: 100px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd; /* Use a lighter border color */
+  border-radius: 8px;
+  background-color: #f7f7f7; /* Light gray background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: 100%; /* Full width */
+}
+
+.crear-cita h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #202124; /* Dark grayish-blue */
+}
+
+.crear-cita label {
+  display: block;
+  margin-bottom: 5px;
+  color: #202124; /* Dark grayish-blue */
+}
+
+.crear-cita input,
+.crear-cita textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd; /* Use a lighter border color */
+  border-radius: 3px;
+  margin-bottom: 15px;
+  color: #202124; /* Dark grayish-blue */
+}
+
+.crear-cita textarea {
+  height: 100px;
+}
+
+.crear-cita button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
